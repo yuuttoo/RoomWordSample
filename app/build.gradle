@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace 'io.airouting.example.roomwordsample'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "io.airouting.example.roomwordsample"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -53,6 +53,8 @@ dependencies {
     androidTestImplementation "androidx.room:room-testing:$rootProject.roomVersion"
 
     // Lifecycle components
+    implementation "androidx.activity:activity-ktx:1.6.1"
+
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycleVersion"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$rootProject.lifecycleVersion"
     implementation "androidx.lifecycle:lifecycle-common-java8:$rootProject.lifecycleVersion"
